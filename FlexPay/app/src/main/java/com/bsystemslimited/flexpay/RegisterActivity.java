@@ -25,7 +25,7 @@ public class RegisterActivity extends Activity {
 
     //UI Controls
     private ProgressDialog dialog;
-    private EditText txtFirstName,txtLastName;
+    private EditText txtFullName;
     private EditText txtPassword,txtConfPassword;
     private EditText txtPhone;
     private EditText txtSeqQuesOne,txtSeqQuesTwo;
@@ -36,15 +36,14 @@ public class RegisterActivity extends Activity {
         setContentView(R.layout.activity_register);
 
         //Setting Up UI Controls
-        txtFirstName = (EditText)findViewById(R.id.etForename);
-        txtLastName = (EditText)findViewById(R.id.etSurname);
+        txtFullName = (EditText)findViewById(R.id.etFullName);
         txtPassword = (EditText)findViewById(R.id.rPassword);
         txtConfPassword = (EditText)findViewById(R.id.rConPassword);
         txtPhone = (EditText)findViewById(R.id.etPhone);
-        txtSeqQuesOne = (EditText)findViewById(R.id.etSQ1);
+        /*txtSeqQuesOne = (EditText)findViewById(R.id.etSQ1);*/
         txtSeqQuesTwo = (EditText)findViewById(R.id.etSQ2);
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinQuestion1);
+        /*Spinner spinner = (Spinner) findViewById(R.id.spinQuestion1);
                 // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.arrQuestions, android.R.layout.simple_spinner_item);
@@ -56,11 +55,11 @@ public class RegisterActivity extends Activity {
         Spinner spinner2 = (Spinner) findViewById(R.id.spinQuestion2);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
-                R.array.arrQuestions, android.R.layout.simple_spinner_item);
+                R.array.arrQuestions, R.layout.spinner_item);
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinner.setAdapter(adapter2);
+        spinner2.setAdapter(adapter2);*/
 
         Button bNext =(Button) findViewById(R.id.bNext);
 
