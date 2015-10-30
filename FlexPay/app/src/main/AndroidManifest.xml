@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+    
 
     <application
         android:allowBackup="true"
@@ -27,7 +28,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".RegisterActivity" >
+        <activity android:name=".RegisterActivity"  >
             <intent-filter>
                 <action android:name="android.intent.action.REGISTER" />
 

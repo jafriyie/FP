@@ -11,6 +11,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -32,6 +33,7 @@ public class LoginActivity extends Activity {
     private ProgressDialog dialog;
     EditText txtUsername,txtPassword;
     Button btnLogin;
+    TextView tvForgot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,10 +44,23 @@ public class LoginActivity extends Activity {
         txtUsername = (EditText)findViewById(R.id.etUsername);
         txtPassword = (EditText)findViewById(R.id.etPassword);
         btnLogin =(Button) findViewById(R.id.bLogIn);
+        tvForgot = (TextView) findViewById(R.id.tvForgot);
 
         //
         mobileData = new MobileDataConnectionDetector(LoginActivity.this);
         wifiData = new WiFiDataConnectionDetector(LoginActivity.this);
+
+        tvForgot.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
+
+
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,11 +72,11 @@ public class LoginActivity extends Activity {
                 String username = "Username=" + txtUsername.getText().toString();
                 String password = "&Password=" + txtPassword.getText().toString();
 
-                if(txtUsername.getText().toString().contentEquals("")){
-                    Toast.makeText(LoginActivity.this,"Please provide Username.",Toast.LENGTH_SHORT).show();
-                }else if (txtPassword.getText().toString().contentEquals("")) {
+                if (txtUsername.getText().toString().contentEquals("")) {
+                    Toast.makeText(LoginActivity.this, "Please provide Username.", Toast.LENGTH_SHORT).show();
+                } else if (txtPassword.getText().toString().contentEquals("")) {
                     Toast.makeText(getApplicationContext(), "Please provide Password", Toast.LENGTH_SHORT).show();
-                }else {
+                } else {
                     if (isMobileDataAvailable != false || isWifiAvailable != false) {
                         new Primary_AuthTask(URL + username + password).execute();
                     } else {
