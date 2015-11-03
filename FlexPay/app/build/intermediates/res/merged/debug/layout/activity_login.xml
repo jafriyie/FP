@@ -1,48 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
-android:orientation="vertical"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:paddingLeft="30dp"
-android:paddingRight="30dp"
-android:gravity="center">
-<!--android:background="@drawable/background"-->
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:gravity="center"
+    android:background="@drawable/logback1"
+    >
 
 
 
-<!--<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/dnzlogow"
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:src="@drawable/fplogo1"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
     android:layout_marginBottom="20dp"
-    />-->
-
-<!--<TextView
-    android:layout_height="wrap_content"
-    android:layout_width="wrap_content"
-    android:text="Username or Phone Number"
-    android:textSize="20dp"
-    android:textStyle="bold"
-    android:layout_marginBottom="10dp"
-    android:alpha="1"
-    android:background="#00000"
-    android:textColor="#FFFFFF"
-/>-->
-
-<EditText
-    android:id="@+id/etUsername"
-    android:layout_width="fill_parent"
-    android:layout_height="40dp"
-    android:hint="E-mail or Mobile Number"
-    android:layout_marginBottom="3dp"
-    android:textSize="20dp"
-    android:alpha="1"
-    android:background="#FFFFFF"
-    android:textColor="#000000"
     />
 
-<!--<TextView
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Email/Mobile Number"
+        android:textColor="#FFFFFF"
+        />
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+
+        android:layout_above="@+id/txtPassword1"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        style="@style/EditTextCustomHolo"
+         >
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:inputType="textPassword"
+        android:layout_above="@+id/txtPassword1"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        style="@style/EditTextCustomHolo"
+        >
+        <requestFocus />
+    </EditText>
+
+    <!--<TextView
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"
     android:text="Password"
@@ -54,6 +88,7 @@ android:gravity="center">
     android:textColor="#FFFFFF"
 />-->
 
+<!--
 <EditText
     android:id="@+id/etPassword"
     android:layout_width="fill_parent"
@@ -66,8 +101,30 @@ android:gravity="center">
     android:background="#FFFFFF"
     android:textColor="#000000"
     />
+-->
+    <Button
+        android:id="@+id/bLogIn"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linearLayoutControls"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonshapeblue"
+        android:textColor="#FFFFFF"
+        android:text="Login" />
 
-<Button
+    <TextView
+        android:id="@+id/tvForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Forgot Your Password?"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:textColor="#FFFFFF"
+        />
+
+<!--<Button
     android:id="@+id/bLogIn"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
@@ -77,56 +134,11 @@ android:gravity="center">
     android:textSize="20dp"
     android:background="#6BAECF"
     android:textColor="#FFFFFF"
-    />
-
-<TextView
-    android:layout_height="wrap_content"
-    android:layout_width="wrap_content"
-    android:text="Login Worked"
-    android:textSize="20dp"
-    android:textStyle="bold"
-    android:layout_marginBottom="10dp"
-    android:alpha="1"
-    android:background="#FFFFFF"
-    android:textColor="#000000"
-    android:id="@+id/logCheck"
-    android:visibility="invisible"
-
-    />
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2">
-
-        <Button
-            android:id="@+id/bGoogle"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="Google"
-            android:layout_weight="1"
-            android:alpha="1"
-            android:layout_marginRight="5dp"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:background="#6BAECF"
-            android:textColor="#FFFFFF"
-            />
-
-        <Button
-            android:id="@+id/bFacebook"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:text="Facebook"
-            android:alpha="1"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:background="#6BAECF"
-            android:textColor="#FFFFFF"
-            />
-    </LinearLayout>
+    />-->
 
 
-</LinearLayout><!-- From: file:/C:/Users/Hecatonchries/Documents/FlexPay/app/src/main/res/layout/activity_login.xml -->
+
+
+
+</LinearLayout>
+<!-- From: file:/C:/Users/Jason/Documents/AndroidStudioProjects/FlexPay/app/src/main/res/layout/activity_login.xml -->
