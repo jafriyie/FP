@@ -7,12 +7,7 @@
     android:orientation="vertical"
     tools:context="com.bsystemslimited.flexpay.DashActivity">
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Welcome To FlexPay"
-        android:textSize="30dp"
-        />
+
 
 </android.support.v4.view.ViewPager>
-<!-- From: file:/C:/Users/Jason/Documents/AndroidStudioProjects/FlexPay/app/src/main/res/layout/activity_dash.xml -->
+<!-- From: file:/C:/Users/Jason/Documents/GitHub/FP/FlexPay/app/src/main/res/layout/activity_dash.xml -->
