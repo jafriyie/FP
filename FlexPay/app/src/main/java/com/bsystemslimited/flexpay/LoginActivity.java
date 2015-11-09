@@ -20,7 +20,7 @@ import org.json.JSONObject;
 public class LoginActivity extends Activity {
 
     //Initializing
-    private static String URL = "http://197.159.128.38/FlexPayWebService/FlexPay.svc/SignIn?";
+    private static String URL = "http://10.0.0.104:70/flexpay/v1/user";
 
     private InternetChecker inChecker = new InternetChecker(this);
     private MobileDataConnectionDetector mobileData;
@@ -66,11 +66,15 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-                isMobileDataAvailable = mobileData.checkMobileInternetConn();
+
+                Intent myIntent = new Intent(LoginActivity.this, DashActivity.class);
+                startActivity(myIntent);
+
+                /*isMobileDataAvailable = mobileData.checkMobileInternetConn();
                 isWifiAvailable = wifiData.checkMobileInternetConn();
                 //
-                String username = "Username=" + txtUsername.getText().toString();
-                String password = "&Password=" + txtPassword.getText().toString();
+                String username = "/" + txtUsername.getText().toString();
+                String password = "/" + txtPassword.getText().toString();
 
                 if (txtUsername.getText().toString().contentEquals("")) {
                     Toast.makeText(LoginActivity.this, "Please provide Username.", Toast.LENGTH_SHORT).show();
@@ -83,7 +87,7 @@ public class LoginActivity extends Activity {
                         Toast.makeText(getApplicationContext(),
                                 "No Internet Connectivity", Toast.LENGTH_LONG).show();
                     }
-                }
+                }*/
             }
         });
     }
@@ -119,7 +123,7 @@ public class LoginActivity extends Activity {
                 WebServiceExecutor webservice = new WebServiceExecutor();
                 try {
                     jsonObject = webservice.HttpGetData(url).getJSONObject(
-                            "SignInResult");
+                            "Result");
                     return jsonObject;
 
                 } catch (JSONException e) {
@@ -143,9 +147,9 @@ public class LoginActivity extends Activity {
             dialog.dismiss();
             try {
 
-                String response = result.getString("ResponsId");
+                String response = result.getString("ResponseCode");
                 String responseMessage = "";
-                if (response.contentEquals("0")) {
+                if (response.contentEquals("100")) {
                     SaveSharedPreference.setUserName(getApplicationContext(),
                             txtUsername.getText().toString());
                     SaveSharedPreference.setUserPassword(
@@ -164,8 +168,8 @@ public class LoginActivity extends Activity {
                             Toast.LENGTH_SHORT).show();
                 }
             } catch (JSONException e) {
-                Toast.makeText(getApplicationContext(), e.getMessage(),
-                        Toast.LENGTH_SHORT).show();
+                /*Toast.makeText(getApplicationContext(), e.getMessage(),
+                        Toast.LENGTH_SHORT).show();*/
             } catch (Throwable e) {
                 Toast.makeText(getApplicationContext(),
                         "Connection Lost", Toast.LENGTH_SHORT).show();
