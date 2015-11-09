@@ -20,7 +20,7 @@ public class TabsAdapter extends FragmentPagerAdapter {
             case 1:
                 return new AccountsFragment();
             case 2:
-                return new TransactionsFragment();
+                return new ProfileFragment();
             default:
                 return null;
         }

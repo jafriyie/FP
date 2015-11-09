@@ -10,7 +10,7 @@ public class DashActivity extends AppCompatActivity implements ActionBar.TabList
     TabsAdapter myAdapter;
     ViewPager pager;
     android.support.v7.app.ActionBar actionBar;
-    String[] titles = {"Home", "Accounts", "Transactions"};
+    String[] titles = {"Home", "Payments", "Profile"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
