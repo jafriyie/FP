@@ -445,11 +445,12 @@ int drawable buttonshapeblue 0x7f02004a
 int drawable fplogo 0x7f02004b
 int drawable fplogo1 0x7f02004c
 int drawable ic_launcher 0x7f02004d
-int drawable icon 0x7f02004e
-int drawable logback 0x7f02004f
-int drawable logback1 0x7f020050
-int drawable login 0x7f020051
-int drawable notification_template_icon_bg 0x7f020052
+int drawable ic_power_settings_new_white_24dp 0x7f02004e
+int drawable icon 0x7f02004f
+int drawable logback 0x7f020050
+int drawable logback1 0x7f020051
+int drawable login 0x7f020052
+int drawable notification_template_icon_bg 0x7f020053
 int id action0 0x7f0d0063
 int id action_bar 0x7f0d003e
 int id action_bar_activity_content 0x7f0d0000
