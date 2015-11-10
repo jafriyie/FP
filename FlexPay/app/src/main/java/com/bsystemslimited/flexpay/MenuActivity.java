@@ -36,7 +36,7 @@ public class MenuActivity extends Activity {
                 Intent myIntent = new Intent(MenuActivity.this, LoginActivity.class);
                 startActivity(myIntent);
 
-               // startActivity(new Intent("com.bsystemslimited.flexpay.LOGIN"));
+                // startActivity(new Intent("com.bsystemslimited.flexpay.LOGIN"));
 
             }
         });

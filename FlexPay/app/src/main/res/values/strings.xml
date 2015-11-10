@@ -1,16 +1,24 @@
 <resources>
     <string name="app_name">FlexPay</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
     <string-array name="arrQuestions">
-        <item>In what city or town did your mother and father meet?</item>
+        <item>In what city or town did your parents meet?</item>
         <item>In what town was your first job?</item>
-        <item>What is your favorite team?</item>
-        <item>What is the name of your favorite childhood friend?</item>
+        <item>What is your favorite football team?</item>
+        <item>What was the name of your best childhood friend?</item>
         <item>What is your favorite movie?</item>
         <item>What was your favorite food as a child?</item>
         <item>What is your mother\'s maiden name?</item>
         <item>What street did you grow up on?</item>
         <item>What was the name of your first pet?</item>
-        <item>Which is your favorite web browser?</item>
+        <item>What is your favorite web browser?</item>
     </string-array>
 
     <string-array name="arrMobMoney">

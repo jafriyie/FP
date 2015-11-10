@@ -5,195 +5,205 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/paymentcards_list_view_row_background"
-        android:orientation="vertical"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:text="Profile Details"
-            android:textColor="#4B42FB"
-            android:textSize="20dp" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="#DFDFDF" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp"
-            android:text="Fullname"
-            android:textColor="#939393"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/profileCard_Fullname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:textColor="#5E5E5E"
-            android:textSize="18dp" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
 
-
-        <EditText
-            android:id="@+id/profileCard_txtFullname"
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            android:textColor="#5E5E5E"
-            android:textSize="18dp"
-            android:visibility="gone"
-            >
-        </EditText>
-
-
-        <TextView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            android:text="Email"
-            android:textColor="#939393"
-            android:textSize="15sp" />
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/paymentcards_list_view_row_background"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
 
-        <TextView
-            android:id="@+id/profileCard_Email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:textColor="#5E5E5E"
-            android:textSize="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Profile Details"
+                android:textColor="#4B42FB"
+                android:textSize="20dp" />
 
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#DFDFDF" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Fullname"
+                android:textColor="#939393"
+                android:textSize="15sp" />
 
-
-        <EditText
-            android:id="@+id/profileCard_txtEmail"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            android:textColor="#5E5E5E"
-            android:textSize="18dp"
-            android:visibility="gone"
-            >
-        </EditText>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:text="Phone Number"
-            android:textColor="#939393"
-            android:textSize="15sp" />
-
-
-        <TextView
-            android:id="@+id/profileCard_PhoneNumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="15dp"
-            android:textColor="#5E5E5E"
-            android:textSize="18dp" />
+            <TextView
+                android:id="@+id/profileCard_Fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#5E5E5E"
+                android:textSize="18dp" />
 
 
 
-        <EditText
-            android:id="@+id/profileCard_txtPhoneNumber"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            android:textColor="#5E5E5E"
-            android:textSize="18dp"
-            android:visibility="gone"
-            >
-        </EditText>
+            <EditText
+                android:id="@+id/profileCard_txtFullname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#5E5E5E"
+                android:textSize="18dp"
+                style="@style/EditTextCustomHolo"
+                android:visibility="gone"
+                >
+            </EditText>
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="#DFDFDF" />
 
-        <Button
-            android:id="@+id/profileCard_SaveProfile"
-            android:layout_width="160dp"
-            android:layout_height="40dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/buttonshape"
-            android:textColor="#FFFFFF"
-            android:visibility="gone"
-            android:text="Save Profile" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:text="Email"
+                android:textColor="#939393"
+                android:textSize="15sp" />
 
-        <Button
-            android:id="@+id/profileCard_EditProfile"
-            android:layout_width="160dp"
-            android:layout_height="40dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/buttonshapeblue"
-            android:textColor="#FFFFFF"
-            android:text="Edit Profile" />
+            <TextView
+                android:id="@+id/profileCard_Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#5E5E5E"
+                android:textSize="18dp" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="#DFDFDF" />
 
-        <Button
-            android:id="@+id/profileCard_ResetPassword"
-            android:layout_width="160dp"
-            android:layout_height="40dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/buttonshapeblue"
-            android:textColor="#FFFFFF"
-            android:text="Reset Password" />
+
+
+            <EditText
+                android:id="@+id/profileCard_txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#5E5E5E"
+                android:textSize="18dp"
+                style="@style/EditTextCustomHolo"
+                android:visibility="gone"
+                >
+            </EditText>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Phone Number"
+                android:textColor="#939393"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/profileCard_PhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#5E5E5E"
+                android:textSize="18dp" />
+
+
+
+            <EditText
+                android:id="@+id/profileCard_txtPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#5E5E5E"
+                android:textSize="18dp"
+                style="@style/EditTextCustomHolo"
+                android:visibility="gone"
+                >
+            </EditText>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#DFDFDF" />
+
+            <Button
+                android:id="@+id/profileCard_SaveProfile"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonshape"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                android:text="Save Profile" />
+
+            <Button
+                android:id="@+id/profileCard_EditProfile"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonshapeblue"
+                android:textColor="#FFFFFF"
+                android:text="Edit Profile" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#DFDFDF" />
+
+            <Button
+                android:id="@+id/profileCard_ResetPassword"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonshapeblue"
+                android:textColor="#FFFFFF"
+                android:text="Reset Password" />
 
 
         </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

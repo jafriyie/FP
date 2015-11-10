@@ -21,7 +21,7 @@ import org.json.JSONObject;
 
 import java.util.regex.Pattern;
 
-public class setPaymentActivity extends Activity {
+public class SetPaymentActivity extends Activity {
 
     private static String URL = "http://10.0.0.104:70/flexpay/v1/user";
 
@@ -54,7 +54,7 @@ public class setPaymentActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-                Intent myIntent = new Intent(setPaymentActivity.this, DashActivity.class);
+                Intent myIntent = new Intent(SetPaymentActivity.this, DashActivity.class);
                 startActivity(myIntent);
             }
         });

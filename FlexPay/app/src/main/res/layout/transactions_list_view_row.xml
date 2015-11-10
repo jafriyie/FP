@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/paymentcards_list_view_row_background"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:weightSum="2">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#939393"
+                android:textSize="12sp"
+                android:text="Sender A/C"
+                android:gravity="left"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:id="@+id/etTransCardList_SenderAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#5E5E5E"
+                android:textSize="17sp"
+                android:gravity="left"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#939393"
+                android:textSize="12sp"
+                android:text="Recipient A/C"
+                android:gravity="left"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:id="@+id/etTransCardList_RecipientAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#5E5E5E"
+                android:textSize="17sp"
+                android:gravity="left"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#939393"
+                android:textSize="12sp"
+                android:text="Payment Date"
+                android:gravity="left"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:id="@+id/etTransCardList_PaymentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#5E5E5E"
+                android:textSize="17sp"
+                android:gravity="left"
+                android:layout_gravity="left"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layoutPaymentSection"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/etTransCardList_PaymentAmountHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#545454"
+                android:text="AMOUNT"
+                android:textSize="13sp"
+                android:gravity="right"
+                android:layout_gravity="right"
+                />
+
+            <TextView
+                android:id="@+id/etTransCardList_PaymentAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#5E5E5E"
+                android:textSize="30sp"
+                android:gravity="right"
+                android:layout_gravity="right"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+

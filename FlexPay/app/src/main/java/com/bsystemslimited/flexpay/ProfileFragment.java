@@ -1,6 +1,7 @@
 package com.bsystemslimited.flexpay;
 
-import android.content.Intent;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -18,6 +19,7 @@ public class ProfileFragment extends Fragment {
 
     View view;
     Button btnEditProfile,btnSaveProfile;
+    Button btnResetPassword;
     //
     TextView tvFullname,tvEmailAddress,tvPhoneNumber;
     EditText txtFullname,txtEmailAddress,txtPhoneNumber;
@@ -30,6 +32,7 @@ public class ProfileFragment extends Fragment {
         //Initializing Controls
         btnEditProfile = (Button)view.findViewById(R.id.profileCard_EditProfile);
         btnSaveProfile = (Button)view.findViewById(R.id.profileCard_SaveProfile);
+        btnResetPassword = (Button)view.findViewById(R.id.profileCard_ResetPassword);
         //
         tvFullname = (TextView)view.findViewById(R.id.profileCard_Fullname);
         tvEmailAddress = (TextView)view.findViewById(R.id.profileCard_Email);
@@ -77,6 +80,38 @@ public class ProfileFragment extends Fragment {
                 tvEmailAddress.setVisibility(View.VISIBLE);
                 tvPhoneNumber.setVisibility(View.VISIBLE);
                 btnEditProfile.setVisibility(View.VISIBLE);
+            }
+        });
+
+
+        btnResetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                // Get the layout inflater
+                LayoutInflater inflater = getActivity().getLayoutInflater();
+
+                // Inflate and set the layout for the dialog
+                // Pass null as the parent view because its going in the dialog layout
+                builder.setTitle("Reset Password");
+                builder.setView(inflater.inflate(R.layout.reset_password_dialog, null))
+                        // Add action buttons
+                        .setPositiveButton("Reset", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
+                                // Reset Password
+                            }
+                        })
+                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.dismiss();
+                            }
+                        });
+
+                AlertDialog alert = builder.create();
+                alert.show();
+
             }
         });
 
