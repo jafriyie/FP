@@ -26,6 +26,7 @@ import java.util.ArrayList;
 public class HomeFragment extends Fragment {
 
     String[] contextMenuItems = {"New Transaction","View Transactions","Edit Payment Card","Delete Payment Card"};
+    String[] TransactionTypes = {"Money Transfer","Pay Merchant"};
     View view;
     TextView welcomeUser,lastLoginDate;
     ListView theList;
@@ -49,8 +50,9 @@ public class HomeFragment extends Fragment {
         myObjects = new ArrayList<PaymentCardObject>();
         //
         myObjects.add(new PaymentCardObject(1, "MTN Mobile Money", "0245558781", "10.00"));
-        myObjects.add(new PaymentCardObject(2, "TiGo Cash", "0279058231", "98.01"));
-        myObjects.add(new PaymentCardObject(3, "AirTel Money", "0260098998", "1000.90"));
+        myObjects.add(new PaymentCardObject(2, "Vodafone Money", "0200395778", "678.23"));
+        myObjects.add(new PaymentCardObject(3, "TiGo Cash", "0279058231", "98.01"));
+        myObjects.add(new PaymentCardObject(4, "AirTel Money", "0260098998", "1000.90"));
 
         myAdapter = new PaymentCardsList_Adapter(getActivity(), myObjects);
 
@@ -103,7 +105,7 @@ public class HomeFragment extends Fragment {
         } else if (item.getTitle() == "View Transactions") {
             ViewTransactionsOnCard(selObj);
         } else if (item.getTitle() == "Edit Payment Card") {
-            //Toast.makeText(getActivity(), selObj.getMobileNetwork(), Toast.LENGTH_SHORT).show();
+
         } else if (item.getTitle() == "Delete Payment Card") {
             DeletePaymentCard(selObj);
         }
@@ -114,7 +116,16 @@ public class HomeFragment extends Fragment {
     //New Transaction Function
     public void NewTransaction()
     {
-
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle("New Transaction")
+                .setItems(TransactionTypes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // The 'which' argument contains the index position
+                        // of the selected item
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 
     //View Transactions on Payment Card
@@ -127,6 +138,7 @@ public class HomeFragment extends Fragment {
     public void DeletePaymentCard(final PaymentCardObject Obj)
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        builder.setTitle("Delete Payment Card");
         builder.setMessage("Are you sure you want to Delete the Selected Payment Card ?");
 
         builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {

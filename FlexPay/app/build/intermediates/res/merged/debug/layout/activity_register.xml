@@ -53,7 +53,7 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginBottom="10dp"
                 style="@style/EditTextCustomHolo"
-            />
+                />
 
             <!-- User's E-Mail -->
 
@@ -135,7 +135,7 @@
                 android:inputType="textPassword"
 
 
-            />
+                />
 
             <!-- User's Phone Number -->
 
@@ -164,7 +164,7 @@
                 android:inputType="phone"
                 />
 
-             <!--User's Security Question-->
+            <!--User's Security Question-->
 
             <TextView
                 android:layout_height="wrap_content"
@@ -180,11 +180,10 @@
 
             <Spinner
                 android:id="@+id/spinQuestion1"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_marginBottom="5dp"
-                android:popupBackground="#777777"
+                android:popupBackground="#DDDDDD"
+
                 style="@style/SpinnerCustomHolo"
                 />
 
@@ -214,53 +213,53 @@
 
                 />
 
-           <!-- <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="8dp"
-                android:text="Please Type In A Memorable Question"
-                android:textColor="#FFFFFF"
-                />
+            <!-- <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:paddingLeft="8dp"
+                 android:paddingRight="8dp"
+                 android:layout_marginRight="8dp"
+                 android:layout_marginLeft="8dp"
+                 android:text="Please Type In A Memorable Question"
+                 android:textColor="#FFFFFF"
+                 />
 
-            <EditText
-                android:id="@+id/spinQuestion"
-                android:layout_width="fill_parent"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_height="40dp"
-                android:inputType="text"
-                android:layout_marginBottom="10dp"
-                style="@style/EditTextCustomHolo"
+             <EditText
+                 android:id="@+id/spinQuestion"
+                 android:layout_width="fill_parent"
+                 android:paddingLeft="8dp"
+                 android:paddingRight="8dp"
+                 android:layout_marginRight="8dp"
+                 android:layout_marginLeft="8dp"
+                 android:layout_height="40dp"
+                 android:inputType="text"
+                 android:layout_marginBottom="10dp"
+                 style="@style/EditTextCustomHolo"
 
-                />
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="8dp"
-                android:text="Answer The Security Question"
-                android:textColor="#FFFFFF"
-            />
-            <EditText
-                android:id="@+id/etSQ2"
-                android:layout_width="fill_parent"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_height="40dp"
-                android:inputType="text"
-                android:layout_marginBottom="10dp"
-                style="@style/EditTextCustomHolo"
+                 />
+             <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:paddingLeft="8dp"
+                 android:paddingRight="8dp"
+                 android:layout_marginRight="8dp"
+                 android:layout_marginLeft="8dp"
+                 android:text="Answer The Security Question"
+                 android:textColor="#FFFFFF"
+             />
+             <EditText
+                 android:id="@+id/etSQ2"
+                 android:layout_width="fill_parent"
+                 android:paddingLeft="8dp"
+                 android:paddingRight="8dp"
+                 android:layout_marginRight="8dp"
+                 android:layout_marginLeft="8dp"
+                 android:layout_height="40dp"
+                 android:inputType="text"
+                 android:layout_marginBottom="10dp"
+                 style="@style/EditTextCustomHolo"
 
-                />-->
+                 />-->
 
 
             <Button
@@ -278,7 +277,7 @@
                 android:text="Next"
 
 
-            />
+                />
 
 
 
@@ -297,4 +296,4 @@
 
 
 
-<!-- From: file:/C:/Users/Hecatonchries/Documents/FlexPay/app/src/main/res/layout/activity_register.xml -->
+<!-- From: file:/C:/Users/Jason/Documents/AndroidStudioProjects/FlexPay/app/src/main/res/layout/activity_register.xml -->

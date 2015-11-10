@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,14 +13,14 @@ xmlns:tools="http://schemas.android.com/tools"
 
 
 
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="80dp"
-    android:src="@drawable/fplogo1"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
-    android:layout_marginBottom="20dp"
-    />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/fplogo1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        />
 
     <TextView
         android:layout_height="wrap_content"
@@ -45,7 +45,7 @@ xmlns:tools="http://schemas.android.com/tools"
         android:layout_marginBottom="10dp"
         android:ems="10"
         style="@style/EditTextCustomHolo"
-         >
+        >
         <requestFocus />
     </EditText>
 
@@ -87,20 +87,20 @@ xmlns:tools="http://schemas.android.com/tools"
     android:textColor="#FFFFFF"
 />-->
 
-<!--
-<EditText
-    android:id="@+id/etPassword"
-    android:layout_width="fill_parent"
-    android:layout_height="40dp"
-    android:inputType="textPassword"
-    android:hint="Password"
-    android:layout_marginBottom="5dp"
-    android:textSize="20dp"
-    android:alpha="1"
-    android:background="#FFFFFF"
-    android:textColor="#000000"
-    />
--->
+    <!--
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:alpha="1"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        />
+    -->
     <Button
         android:id="@+id/bLogIn"
         android:layout_width="160dp"
@@ -123,21 +123,21 @@ xmlns:tools="http://schemas.android.com/tools"
         android:textColor="#FFFFFF"
         />
 
-<!--<Button
-    android:id="@+id/bLogIn"
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent"
-    android:text="Login"
-    android:alpha="1"
-    android:textStyle="bold"
-    android:textSize="20dp"
-    android:background="#6BAECF"
-    android:textColor="#FFFFFF"
-    />-->
+    <!--<Button
+        android:id="@+id/bLogIn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Login"
+        android:alpha="1"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#6BAECF"
+        android:textColor="#FFFFFF"
+        />-->
 
 
 
 
 
 </LinearLayout>
-<!-- From: file:/C:/Users/Hecatonchries/Documents/FlexPay/app/src/main/res/layout/activity_login.xml -->
+<!-- From: file:/C:/Users/Jason/Documents/AndroidStudioProjects/FlexPay/app/src/main/res/layout/activity_login.xml -->

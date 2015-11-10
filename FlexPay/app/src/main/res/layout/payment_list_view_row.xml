@@ -28,10 +28,21 @@
             android:layout_gravity="left"
             android:gravity="left">
 
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/etPaymentCardList_ImageLogo" />
+
             <TextView
                 android:id="@+id/etPaymentCardList_MobileNetwork"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:textColor="#5E5E5E"
@@ -43,7 +54,8 @@
                 android:id="@+id/etPaymentCardList_MobileNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:textColor="#939393"
@@ -64,8 +76,10 @@
             >
 
             <TextView
+                android:id="@+id/etPaymentCardList_BalanceHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:textColor="#545454"
@@ -79,7 +93,7 @@
                 android:id="@+id/etPaymentCardList_Balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="25dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:textColor="#5E5E5E"
