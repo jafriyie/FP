@@ -27,4 +27,6 @@
         <item>MTN Mobile Money</item>
         <item>Vodafone Cash</item>
     </string-array>
+    <string name="title_activity_create_new">New Payment Account</string>
+    <string name="title_activity_edit_card">Edit Payment Account</string>
 </resources>

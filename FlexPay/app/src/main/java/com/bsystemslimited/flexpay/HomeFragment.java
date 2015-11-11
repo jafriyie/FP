@@ -4,8 +4,11 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.FragmentManager;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -38,7 +41,20 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+
         view = inflater.inflate(R.layout.home_fragment, container, false);
+
+        FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.HomeFragment_Fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_SHORT)
+                        .setAction("Action", null).show();*/
+
+                Intent myIntent = new Intent(getActivity(), CreateNewActivity.class);
+                startActivity(myIntent);
+            }
+        });
 
         //Initializing Controls
         welcomeUser = (TextView)view.findViewById(R.id.dashoardProfileCard_Username);
@@ -105,13 +121,22 @@ public class HomeFragment extends Fragment {
         } else if (item.getTitle() == "View Transactions") {
             ViewTransactionsOnCard(selObj);
         } else if (item.getTitle() == "Edit Payment Card") {
-
+            EditPaymentCard(selObj);
         } else if (item.getTitle() == "Delete Payment Card") {
             DeletePaymentCard(selObj);
         }
 
         return true;
     }
+
+
+
+    //New Payment Account
+    public void NewPaymentAccount()
+    {
+
+    }
+
 
     //New Transaction Function
     public void NewTransaction()
@@ -132,6 +157,12 @@ public class HomeFragment extends Fragment {
     public void ViewTransactionsOnCard(final PaymentCardObject Obj)
     {
 
+    }
+
+    private void EditPaymentCard(PaymentCardObject selObj)
+    {
+        Intent myIntent = new Intent(getActivity(), EditCardActivity.class);
+        startActivity(myIntent);
     }
 
     //Delete Payment Card Function

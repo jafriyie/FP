@@ -317,6 +317,8 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <!-- From: file:/C:/Users/Jason/Documents/AndroidStudioProjects/FlexPay/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="title_activity_create_new">New Payment Account</string>
+    <string name="title_activity_edit_card">Edit Payment Account</string>
     <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_menu">MenuActivity</string>
@@ -330,7 +332,7 @@
     <eat-comment/>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">#1194F6</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>

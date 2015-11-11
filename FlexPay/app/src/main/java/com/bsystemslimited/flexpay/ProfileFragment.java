@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by Jason on 03/11/2015.
@@ -101,6 +102,9 @@ public class ProfileFragment extends Fragment {
                             @Override
                             public void onClick(DialogInterface dialog, int id) {
                                 // Reset Password
+
+                                Toast.makeText(getActivity(),"", Toast.LENGTH_SHORT).show();
+
                             }
                         })
                         .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {

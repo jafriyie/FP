@@ -16,13 +16,6 @@
         <dex dex="C:\Users\Jason\Documents\AndroidStudioProjects\FlexPay\app\build\intermediates\pre-dexed\debug\classes-f8fde129a84e8e0f50bc4ad7cb9c15a5a34693a6.jar" />
     </item>
     <item
-        jar="C:\Users\Jason\Documents\AndroidStudioProjects\FlexPay\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\Users\Jason\Documents\AndroidStudioProjects\FlexPay\app\build\intermediates\pre-dexed\debug\classes-d2999269a42b31598dedac7ab936d2397222af68.jar" />
-    </item>
-    <item
         jar="C:\Users\Jason\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -35,6 +28,13 @@
         revision="23.0.1"
         sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
         <dex dex="C:\Users\Jason\Documents\AndroidStudioProjects\FlexPay\app\build\intermediates\pre-dexed\debug\classes-332a9fd716844e6589d22fa59e7f5bf4f1e94f2d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jason\Documents\AndroidStudioProjects\FlexPay\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\Jason\Documents\AndroidStudioProjects\FlexPay\app\build\intermediates\pre-dexed\debug\classes-d2999269a42b31598dedac7ab936d2397222af68.jar" />
     </item>
 
 </items>
