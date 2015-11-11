@@ -45,14 +45,7 @@ public class DashActivity extends AppCompatActivity {
 
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
     }
 
     private void setupViewPager(ViewPager viewPager){
@@ -106,13 +99,18 @@ public class DashActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_settings:
+            /*case R.id.action_settings:
                 // User chose the "Settings" item, show the app settings UI...
-                return true;
+                return true;*/
 
             case R.id.actionSignOut:
                 Toast signOut = Toast.makeText(DashActivity.this, "You Have Signed Out", Toast.LENGTH_LONG);
                 signOut.show();
+                return true;
+
+            case R.id.actionSearch:
+                Toast searchIC = Toast.makeText(DashActivity.this, "Search Away", Toast.LENGTH_LONG);
+                searchIC.show();
                 return true;
 
             default:
